@@ -1,0 +1,13 @@
+.messages {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+
+@media only screen and (max-width: 770px) {
+        .chat{
+            display: none;
+        }
+}
