@@ -136,12 +136,13 @@ const GroupChatModal = ({ children }) => {
                         fontSize="35px"
                         fontFamily="Work sans"
                         d="flex"
+                        display={"flex"}
                         justifyContent="center"
                     >
                         Create Group Chat
                     </ModalHeader>
                     <ModalCloseButton />
-                    <ModalBody d="flex" flexDir="column" alignItems="center">
+                    <ModalBody d="flex" flexDir="column" alignItems="center" display={"flex"}>
                         <FormControl>
                             <Input
                                 placeholder="Chat Name"
@@ -151,12 +152,12 @@ const GroupChatModal = ({ children }) => {
                         </FormControl>
                         <FormControl>
                             <Input
-                                placeholder="Add Users eg: John, Piyush, Jane"
+                                placeholder="Add Users eg: John, Jay, Jane"
                                 mb={1}
                                 onChange={(e) => handleSearch(e.target.value)}
                             />
                         </FormControl>
-                        <Box w="100%" d="flex" flexWrap="wrap">
+                        <Box w="100%" d="flex" flexWrap="wrap" display={"flex"}>
                             {selectedUsers.map((u) => (
                                 <UserBadgeItem
                                     key={u._id}
