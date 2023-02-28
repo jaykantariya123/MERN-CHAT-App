@@ -87,7 +87,7 @@ const MyChats = ({ fetchAgain }) => {
                 p={3}
                 bg="#F8F8F8"
                 w="100%"
-                h="100%"
+                h="90%"
                 borderRadius="lg"
                 overflowY="hidden"
             >
